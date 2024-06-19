@@ -35,7 +35,7 @@ Sub Start()
     #End If
     
     Dim Shapes As ShapeRange
-    With InputData.RequestDocumentOrPage
+    With InputData.RequestShapes
         If .IsError Then GoTo Finally
         Set Shapes = .Shapes
     End With
